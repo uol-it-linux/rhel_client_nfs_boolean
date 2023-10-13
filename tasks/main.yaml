@@ -1,6 +1,6 @@
 ---
 - name: Set use_nfs_home_dirs to true
-  ansible.posix.seboolean:
+  ansible.builtin.seboolean:
     name: use_nfs_home_dirs
-    state: true
+    state: yes
     persistent: yes
