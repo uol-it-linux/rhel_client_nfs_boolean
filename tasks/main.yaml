@@ -1,6 +1,18 @@
 ---
-- name: Set use_nfs_home_dirs to true
+- name: Set use_nfs_home_dirs 
   ansible.builtin.seboolean:
     name: use_nfs_home_dirs
+    state: yes
+    persistent: yes
+
+- name: Set domain_can_mmap_files
+  ansible.builtin.seboolean:
+    name: domain_can_mmap_files
+    state: yes
+    persistent: yes
+
+- name: Set colord_use_nfs
+  ansible.builtin.seboolean:
+    name: colord_use_nfs
     state: yes
     persistent: yes
