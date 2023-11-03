@@ -19,6 +19,6 @@
 
 - name: Set polyinstantiation_enabled
   ansible.builtin.seboolean:
-  name: polyinstantiation_enabled
-  state: yes
-  persistent: yes
+    name: polyinstantiation_enabled
+    state: yes
+    persistent: yes
