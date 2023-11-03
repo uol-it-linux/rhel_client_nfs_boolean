@@ -16,3 +16,9 @@
     name: colord_use_nfs
     state: yes
     persistent: yes
+
+- name: Set polyinstantiation_enabled
+  ansible.builtin.seboolean:
+  name: polyinstantiation_enabled
+  state: yes
+  persistent: yes
