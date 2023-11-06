@@ -22,3 +22,6 @@
     name: polyinstantiation_enabled
     state: yes
     persistent: yes
+
+- name: Set file type lnk to permissive
+  command: "semanage permissive -a lnk_file"
