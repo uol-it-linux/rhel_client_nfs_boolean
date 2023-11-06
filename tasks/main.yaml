@@ -23,5 +23,5 @@
     state: yes
     persistent: yes
 
-- name: Set file type lnk to permissive
-  command: "semanage permissive -a lnk_file"
+#- name: Set file type lnk to permissive
+#  command: "semanage permissive -a lnk_file"
