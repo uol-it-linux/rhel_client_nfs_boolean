@@ -1,24 +1,24 @@
 ---
 - name: Set use_nfs_home_dirs 
-  ansible.builtin.seboolean:
+  ansible.posix.seboolean:
     name: use_nfs_home_dirs
     state: yes
     persistent: yes
 
 - name: Set domain_can_mmap_files
-  ansible.builtin.seboolean:
+  ansible.posix.seboolean:
     name: domain_can_mmap_files
     state: yes
     persistent: yes
 
 - name: Set colord_use_nfs
-  ansible.builtin.seboolean:
+  ansible.posix.seboolean:
     name: colord_use_nfs
     state: yes
     persistent: yes
 
 - name: Set polyinstantiation_enabled
-  ansible.builtin.seboolean:
+  ansible.posix.seboolean:
     name: polyinstantiation_enabled
     state: yes
     persistent: yes
